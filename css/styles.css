@@ -2,6 +2,7 @@
 /*Example 1:  Display: Flex and Flex Direction*/
 .h2  {
   font-size: 20px;
+
 }
 
 .container-1 div, .container-4 div{
@@ -9,6 +10,10 @@
   border: 1px solid black;
 }
 
+.flexbox {
+  height: 200px;
+  width: 400px;
+}
 .container-2 {
   padding: 20px;
   border:
@@ -147,4 +152,34 @@
 .flex-item-D {
   width: 20%;
   background-color: orange;
+}
+
+
+
+
+.flex-item-E {
+  flex: 1; /* this setting creates a box that is 4 times larger than the other boxes*/
+  order: 1;
+  /* background-color: red; */
+
+
+}
+.flex-item-F {
+  flex: 1; /* this setting creates a box that is 4 times larger than the other boxes*/
+  order: 2;
+  /* background-color: white */
+
+
+
+}
+
+.flex-item-G {
+  flex: 1; /* this setting creates a box that is 4 times larger than the other boxes*/
+  order: 3;
+  /* background-color: blue; */
+
+
+
+
+
 }
