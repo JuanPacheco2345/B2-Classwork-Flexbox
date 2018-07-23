@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Box</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <br>
+  <br>
+  <div class="container">
+    <h1>What is Flex Box?</h1>
+    <p1>A CSS layout mode that provides an easy and clean way to arrange items within a container</p1>
+      <ul>
+        <li>No longer need floats!</li>
+        <li>Responsive and Mobile Friendly</li>
+        <li>Position of child elements is much easier with Flexbox</li>
+        <li>Flex container margins do not collapse with the margins of its contents</li>
+        <li>Order of elements can easily be changed without editing the HTML file</li>
+      </ul>
+  </div>
+  <br>
+  <br>
+  <div class='container'>
+    <h1>FLEX BOX MODEL CONCEPT</h1>
+        <img src="img/flexbox_theory_1.png"  class="flexbox" alt="FLEXBOX"></img>
+        <br>
+      <ul>
+        <li>The ability to alter item width and height to best fit in the container's free space</li>
+        <li>Position of child elements is much EASIER</li>
+        <li>Built for small-scale layouts</li>
+        <li>The x-axis is known as the main axis.</li>
+        <li>The y-axis is known as the cross axis
+      </ul>
+  </div>
+  <br>
+  <br>
+  <div class='container'>
+    <h1>FLEX PROPERTIES</h1>
+    <h2>Parent Properties - Think Flex-Container</h2>
+    <ul>
+      <li>display: flex</li>
+      <li>flex-direction</li>
+      <li>flex-wrap</li>
+      <li>flex-flow</li>
+      <li>justify-content</li>
+      <li>align-items</li>
+      <li>align-content</li>
+    </ul>
+    <h2>Child Properties - Think Flex-Item</h2>
+    <ul>
+      <li>order:<integer></li>
+      <li>align-content</li>
+      <li>flex-grow: <number></li>
+      <li>flex-shrink: <number></li>
+      <li>flex-basis: <integer></li>
+      <li>flex:<integer></li>
+      <li>align-self</li>
+    </ul>
+  </div>
+  <div class='container'>
+    <h1>FLEXBOX LEARING RESOURCES</h1>
+      <p1>CSS Tricks: A Guide to Flexbox</p1>
+      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Click Here</a>
+      <br>
+      <p1>Flexbox Froggy</p1>
+      <a href="https://flexboxfroggy.com/" target="_blank">Click Here</a>
+  </div>
+  <br>
+  <br>
+  <div class='container'>
+    <h1>Flex Box Practice</h1>
+    <h1>Parent Properties</h1>
+    <br>
+    <h2>Display: Flex</h2>
+      <ul>
+        <li>This defines a flex container and enables a flex context for all its direct children. In essence, it initializes the use of flex properties.</li>
+      </ul>
+  </div>
+
+  <div class='container'>
+    <h2>Flex-Direction</h2>
+      <ul>
+        <li>This establishes the main-axis, thus defining the direction flex items are placed in the flex container.</li>
+      </ul>
+  </div>
+  <br>
+
+  <div class="container-1 flex-container-1">
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+    </div>
+  </div>
+
+  <div class='container'>
+    <h2>Flex-Wrap</h2>
+      <ul>
+        <li>By default, flex items will try to fit all items onto one line. You can change that and allow the items to wrap as needed with this property.</li>
+      </ul>
+  </div>
+  <br>
+
+  <div class="container-1 flex-container-2">
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin.</p1>
+    </div>
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+    </div>
+  </div>
+
+  <div class='container'>
+    <h2>Flex-Flow</h2>
+      <ul>
+        <li>This is a shorthand flex-direction and flex-wrap properties, which together define the flex container's main and cross axes. Default is row nowrap.</li>
+      </ul>
+  </div>
+  <br>
+  <div class="container-1 flex-container-3">
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+    </div>
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+    </div>
+  </div>
+
+  <div class='container'>
+    <h2>Justify-Content</h2>
+      <ul>
+        <li>This defines the alignment along the main axis (x-axis). It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</li>
+      </ul>
+  </div>
+  <br>
+
+  <div class="flex-container-4">
+    <div class="flex-item-D">
+      <p1>Box A</p1>
+      <p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p1>
+    </div>
+    <div class="flex-item-D">
+      <p1>Box B</p1>
+      <p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eos, neque! Harum doloribus reprehenderit temporibus dolore sed omnis error adipisci distinctio excepturi sunt, mollitia non quasi eligendi pariatur. Animi, explicabo!<p1>
+    </div>
+    <div class="flex-item-D">
+      <p1>Box C</p1>
+      <p1>Similique, eos, neque! Harum doloribus reprehenderit temporibus dolore sed omnis error adipisci distinctio excepturi sunt, mollitia non quasi eligendi pariatur. Animi, explicabo!<p1>
+    </div>
+  </div>
+
+  <div class='container'>
+    <h2>Align-Items</h2>
+      <ul>
+        <li>This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (y-axis).</li>
+      </ul>
+  </div>
+  <br>
+  <div class="container-1 flex-container-5">
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+    </div>
+  </div>
+
+  <div class='container'>
+    <h2>Align-Content</h2>
+      <ul>
+        <li>This aligns a flex container's lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.</li>
+      </ul>
+  </div>
+  <!-- <div class="container-2"> -->
+    <div class="flex-container-6">
+      <div class="flex-item-D">
+        <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+      </div>
+      <div class="flex-item-D">
+        <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+      </div>
+      <div class="flex-item-D">
+        <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+      </div>
+      <div class="flex-item-D">
+        <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+      </div>
+      <div class="flex-item-D">
+        <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+      </div>
+    </div>
+    <div class="flex-container-6">
+      <div class="flex-item-D">
+        <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+      </div>
+      <div class="flex-item-D">
+        <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+      </div>
+      <div class="flex-item-D">
+        <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+      </div>
+      <div class="flex-item-D">
+        <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+      </div>
+      <div class="flex-item-D">
+        <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+      </div>
+      <div class="flex-item-D">
+        <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+      </div>
+    </div>
+  </div>
+
+
+  <div class='container'>
+    <h1>Child Properties</h1>
+    <h2>Flex</h2>
+      <ul>
+        <li>The flex property controls the size of a particular flex item in proportion to the other flex items in a specific flex container.</li>
+      </ul>
+  </div>
+  <div class="container-1 flex-container-1">
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+    </div>
+  </div>
+  <div class='container'>
+    <h2>Order</h2>
+      <ul>
+        <li>The order property controls the order in which they appear in the flex container.</li>
+      </ul>
+  </div>
+
+  <div class="container-1 flex-container-1">
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+    </div>
+  </div>
+
+  <div class='container'>
+    <h2>Flex-Grow</h2>
+      <ul>
+        <li>This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</li>
+      </ul>
+  </div>
+  <div class="container-1 flex-container-1">
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+    </div>
+  </div>
+
+  <div class='container'>
+    <h2>Flex-Shrink</h2>
+      <ul>
+        <li>This defines the ability for a flex item to shrink if necessary.</li>
+      </ul>
+  </div>
+  <div class="container-1 flex-container-1">
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+    </div>
+  </div>
+
+  <div class='container'>
+    <h2>Flex-Basis</h2>
+      <ul>
+        <li>This defines the default size of an element before the remaining space is distributed.</li>
+      </ul>
+  </div>
+  <div class="container-1 flex-container-1">
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+    </div>
+  </div>
+
+
+  <div class='container'>
+    <h2>Flex</h2>
+      <ul>
+        <li>This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto.</li>
+      </ul>
+  </div>
+  <div class="container-1 flex-container-1">
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Align-Self</h2>
+    <ul>
+      <li>This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.</li>
+    </ul>
+  </div>
+  <div class="container-1 flex-container-1">
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Exercises</h1>
+    <h2>Exercise 1</h2>
+    <ul>
+      <li>How can we create three center columns of flex-items in our container?</li>
+    </ul>
+  </div>
+  <div class="container-1 flex-container-1">
+      <div class="flex-item-E">
+        <p1>Box 1</p1>
+        <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+      </div>
+      <div class="flex-item-F">
+        <p1>Box 2</p1>
+        <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+      </div>
+      <div class="flex-item-G">
+        <p1>Box 3</p1>
+        <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+      </div>
+      <br>
+  </div>
+
+  <div class="container">
+    <h2>Exercise 2</h2>
+    <ul>
+      <li>How can we create one flex-item box that is twice the size of the other flex-items? Hint:  There is more than one way to do this.</li>
+    </ul>
+  </div>
+  <div class="container-1 flex-container-1">
+      <div class="flex-item-E">
+        <p1>Box 1</p1>
+        <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+      </div>
+      <div class="flex-item-F">
+        <p1>Box 2</p1>
+        <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+      </div>
+      <div class="flex-item-G">
+        <p1>Box 3</p1>
+        <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+      </div>
+  </div>
+
+  <div class="container">
+    <h2>Exercise 3</h2>
+    <ul>
+      <li>A.  How can we align the rows of flex-items to the top of the container?</li>
+      <li>B.  What about aligning to the bottom of the container?</li>
+      <li>C.  What about aligning to the center of the container?</li>
+    </ul>
+  </div>
+  <div class="container-1 flex-container-1">
+      <div class="flex-item-E">
+        <p1>Box 1</p1>
+        <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+      </div>
+      <div class="flex-item-F">
+        <p1>Box 2</p1>
+        <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+      </div>
+      <div class="flex-item-G">
+        <p1>Box 3</p1>
+        <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+      </div>
+  <!-- </div> -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

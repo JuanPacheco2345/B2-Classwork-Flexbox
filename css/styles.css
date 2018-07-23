@@ -1,0 +1,175 @@
+
+/*Example 1:  Display: Flex and Flex Direction*/
+
+}
+
+.h2  {
+  font-size: 20px;
+}
+
+.container-1 div, .container-2 div, .container-4 div, .flex-container-6 div{
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.flex-container-4 div {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.container-5 {
+  height: 200px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+/*Example 1:  Display: Flex and Flex Direction*/
+
+.flex-container-1 {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+}
+
+/*Example 2:  Flex Wrap - Expand and Collapse to show*/
+
+.flex-container-2 {
+  display:flex;
+  /* flex-wrap: nowrap; */
+ /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+}
+
+/*Example 3: Flex-Flow*/
+
+.flex-container-3 {
+  display: flex;
+  /* flex-flow: row wrap; */
+  /* flex-flow: row wrap-reverse; */
+  /* flex-flow: column-reverse wrap; */
+  /* flex-flow: column wrap-reverse; */
+  /* flex-flow: column-reverse wrap-reverse; */
+}
+
+/* Example 4:  Justify-Content w/Media Query*/
+
+/* @media(min-width:768px){ */
+.flex-container-4 {
+  display: flex;
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content:  space-around; */
+  }
+/* } */
+
+/* Example 5: Align-Items*/
+
+.flex-container-5 {
+  display: flex;
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* align-items: stretch; (default)*/
+}
+
+/* Example 6: Align-Content*/
+
+.flex-container-6 {
+  display: flex;
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  /* align-content: center; */
+  /* align-content:  space-around; */
+  }
+
+
+/* Flex-Items - Children of Flex-Container*/
+
+
+.flex-item-A {
+  flex: 1; /* this setting creates a box that is 4 times larger than the other boxes*/
+  order: 1;
+  background-color: blue;
+
+  /* Example 8: Flex-Grow */
+  flex-grow: 1;
+
+
+  /* Example 9: Flex-Shrink */
+  /* flex-shrink: 1; */
+
+
+  /* Example 10: Flex-Basis */
+
+  /* flex-basis: 50%; */
+  /* flex-basis: auto; */
+}
+
+.flex-item-B {
+  flex: 1;
+  order: 2;
+  background-color: yellow;
+
+  /*Example: 11: Flex */
+
+  /* flex: none; */
+  /* flex: 1; */
+
+
+
+}
+
+.flex-item-C {
+  flex: 1;
+  order: 3;
+  background-color: red;
+
+  /* Example 12: Align-Self */
+
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+    /* align-self: center; */
+    /* align-items: baseline; */
+    /* align-items: stretch; */
+  }
+
+
+
+.flex-item-D {
+  width: 20%;
+  background-color: orange;
+}
+
+
+.flex-item-E {
+  flex: 1; /* this setting creates a box that is 4 times larger than the other boxes*/
+  order: 1;
+  /* background-color: red; */
+
+
+}
+.flex-item-F {
+  flex: 1; /* this setting creates a box that is 4 times larger than the other boxes*/
+  order: 2;
+  /* background-color: white */
+}
+
+.flex-item-G {
+  flex: 1; /* this setting creates a box that is 4 times larger than the other boxes*/
+  order: 3;
+  /* background-color: blue; */
+
+
+
+
+
+}
