@@ -13,9 +13,9 @@
     <h1>What is Flex Box?</h1>
     <p1>A CSS layout mode that provides an easy and clean way to arrange items within a container</p1>
       <ul>
-        <li>NO FLOATS!</li>
+        <li>No longer need floats!</li>
         <li>Responsive and Mobile Friendly</li>
-        <li>Position of child elements is much EASIER</li>
+        <li>Position of child elements is much easier with Flexbox</li>
         <li>Flex container margins do not collapse with the margins of its contents</li>
         <li>Order of elements can easily be changed without editing the HTML file</li>
       </ul>
@@ -27,10 +27,11 @@
         <img src="img/flexbox_theory_1.png"  class="flexbox" alt="FLEXBOX"></img>
         <br>
       <ul>
-        <li>The ability to alter item width and height to best fit in its containers avaiable free space</li>
-        <li>Flexbox is direction-agnostic</li>
+        <li>The ability to alter item width and height to best fit in the container's free space</li>
         <li>Position of child elements is much EASIER</li>
         <li>Built for small-scale layouts</li>
+        <li>The x-axis is known as the main axis.</li>
+        <li>The y-axis is known as the cross axis
       </ul>
   </div>
   <br>
@@ -43,8 +44,9 @@
       <li>flex-direction</li>
       <li>flex-wrap</li>
       <li>flex-flow</li>
-      <!-- <li>justify-content</li> -->
+      <li>justify-content</li>
       <li>align-items</li>
+      <li>align-content</li>
     </ul>
     <h2>Child Properties - Think Flex-Item</h2>
     <ul>
@@ -73,8 +75,11 @@
     <br>
     <h2>Display: Flex</h2>
       <ul>
-        <li>This defines a flex container and enables a flecontext for all its direct children.</li>
+        <li>This defines a flex container and enables a flex context for all its direct children. In essence, it initializes the use of flex properties.</li>
       </ul>
+  </div>
+
+  <div class='container'>
     <h2>Flex-Direction</h2>
       <ul>
         <li>This establishes the main-axis, thus defining the direction flex items are placed in the flex container.</li>
@@ -154,7 +159,7 @@
   <div class='container'>
     <h2>Justify-Content</h2>
       <ul>
-        <li>This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</li>
+        <li>This defines the alignment along the main axis (x-axis). It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</li>
       </ul>
   </div>
   <br>
@@ -177,7 +182,7 @@
   <div class='container'>
     <h2>Align-Items</h2>
       <ul>
-        <li>This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).</li>
+        <li>This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (y-axis).</li>
       </ul>
   </div>
   <br>
@@ -199,41 +204,41 @@
         <li>This aligns a flex container's lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.</li>
       </ul>
   </div>
-  <div class="container-2">
+  <!-- <div class="container-2"> -->
     <div class="flex-container-6">
-      <div class="flex-item-A">
+      <div class="flex-item-D">
         <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
       </div>
-      <div class="flex-item-A">
+      <div class="flex-item-D">
         <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
       </div>
-      <div class="flex-item-B">
+      <div class="flex-item-D">
         <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
       </div>
-      <div class="flex-item-C">
+      <div class="flex-item-D">
         <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
       </div>
-      <div class="flex-item-A">
+      <div class="flex-item-D">
         <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
       </div>
     </div>
     <div class="flex-container-6">
-      <div class="flex-item-B">
+      <div class="flex-item-D">
         <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
       </div>
-      <div class="flex-item-C">
+      <div class="flex-item-D">
         <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
       </div>
-      <div class="flex-item-A">
+      <div class="flex-item-D">
         <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
       </div>
-      <div class="flex-item-B">
+      <div class="flex-item-D">
         <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
       </div>
-      <div class="flex-item-C">
+      <div class="flex-item-D">
         <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
       </div>
-      <div class="flex-item-A">
+      <div class="flex-item-D">
         <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
       </div>
     </div>
@@ -242,6 +247,23 @@
 
   <div class='container'>
     <h1>Child Properties</h1>
+    <h2>Flex</h2>
+      <ul>
+        <li>The flex property controls the size of a particular flex item in proportion to the other flex items in a specific flex container.</li>
+      </ul>
+  </div>
+  <div class="container-1 flex-container-1">
+    <div class="flex-item-A">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue.</p1>
+    </div>
+    <div class="flex-item-B">
+      <p1>Boudin pig chicken alcatra frankfurter. Frankfurter boudin tail tongue. Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin. Baby Lamb Skank stuffed baby pork belly.</p1>
+    </div>
+    <div class="flex-item-C">
+      <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
+    </div>
+  </div>
+  <div class='container'>
     <h2>Order</h2>
       <ul>
         <li>The order property controls the order in which they appear in the flex container.</li>
@@ -377,7 +399,7 @@
   <div class="container">
     <h2>Exercise 2</h2>
     <ul>
-      <li>How can we create one flex-item box that is twice the size of the other flex-items? Hint:  There are two different ways to do this.</li>
+      <li>How can we create one flex-item box that is twice the size of the other flex-items? Hint:  There is more than one way to do this.</li>
     </ul>
   </div>
   <div class="container-1 flex-container-1">
@@ -416,7 +438,7 @@
         <p1>Box 3</p1>
         <p1>Filet mignon ground round salami frankfurter pork chop ball tip venison picanha. Turducken ham hock fatback pork loin boudin</p1>
       </div>
-  </div>
+  <!-- </div> -->
   <script src="js/jquery-3.1.0.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
